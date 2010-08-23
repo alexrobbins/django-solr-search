@@ -59,10 +59,3 @@ SEARCH_HL_PARAMS = getattr(settings, "SEARCH_HL_PARAMS" ,[
 SEARCH_SEPARATOR = getattr(settings, "SEARCH_SEPARATOR", "__")
 
 FACET_SEPARATOR = getattr(settings, "FACET_SEPARATOR", ";;")
-
-########## LOGGING ##############
-
-# The filename to which the logger will write.
-import os
-DIRNAME = os.path.abspath(os.path.dirname(__file__))
-LOGGING_CONF = getattr(settings, "LOGGING_CONF", os.path.join(DIRNAME,'conf/logging.conf'))

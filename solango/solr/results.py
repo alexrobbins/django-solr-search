@@ -1,14 +1,16 @@
 #
 # Copyright 2008 Optaros, Inc.
 #
+import logging
 
 from xml.dom import minidom
 from solango.solr import xmlutils
 from solango.solr.facet import Facet, DateFacet
-from solango.log import logger
 from solango import settings 
 from solango import registry
 import urllib
+
+logger = logging.getLogger('solango')
 
 class SolrException(Exception):
     pass

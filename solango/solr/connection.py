@@ -3,12 +3,14 @@
 #
 
 from datetime import datetime, timedelta
+import logging
 import urllib2
 
 from solango import settings
-from solango.log import logger
 from solango.solr import results
 from solango.solr.query import Query
+
+logger = logging.getLogger('solango')
 
 (DELETE, ADD) = (0,1)
 
