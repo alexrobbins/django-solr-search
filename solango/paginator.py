@@ -103,9 +103,6 @@ class SearchPaginator(object):
     def previous_page_number(self):
         return self.page - 1
     
-    def page_count(self):
-        return  (self.results.count % self.results.rows + 1)
-    
     def facets(self):
         return self.results.facets
     
